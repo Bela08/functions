@@ -1,10 +1,24 @@
+<style>
+.reveal h1, .reveal h2, .reveal h3 {
+  word-wrap: normal;
+  -webkit-hyphens: none;
+  -moz-hyphens: none;
+  hyphens: none;
+}
+
+.section .reveal .state-background{
+  background-color: gray;
+}
+
+</style>
+
 functions with R
 ========================================================
-author: Hezi Buba & Irene Steves
-date: 18/12/2018
+author: Maria Novosolov (adapted from: Hezi Buba & Irene Steves)
+date: 08/03/2020
 autosize: true
 
-Presentation materials: https://github.com/ecodatasci-tlv/functions 
+Presentation materials: https://github.com/globedatasci-ku/functions 
 
 Why write functions?
 ========================================================
@@ -36,7 +50,7 @@ Writing functions
 
 ![](spotify-howtobuildmvp.gif)
 
->"It is faster to make a four-inch mirror then a six-inch mirror than to make a six-inch mirror." 
+>"It is faster to make a four-inch mirror and then a six-inch mirror than to make a six-inch mirror." 
 
 ****
 
@@ -48,7 +62,6 @@ name <- function(variables) {
   
 }
 ```
-
 3. Test it. OPTIONAL: conditional stopping of functions.
 4. Name it. 
 5. Use it in your code or within a more complicated function. 
