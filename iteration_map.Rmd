@@ -1,5 +1,6 @@
 ---
 title: "Iteration with `purrr`"
+author: "adapted from: Hezi Buba & Irene Steves"
 output: 
   html_document: 
     toc: yes

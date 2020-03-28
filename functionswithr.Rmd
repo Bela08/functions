@@ -133,6 +133,24 @@ For example, if you give the function 10 it returns 100
 
 ---
 
+# `apply` family functions
+
+A family of functions to manipulate data in a repetitive way. 
+These functions allow crossing the data in a number of ways and avoid explicit use of loop constructs.
+
+The most used `apply` functions are `apply()` (that we saw before) and `lapply` that work on lists
+
+---
+
+# `apply()`
+
+![](img/content_content_apply_1.png)
+
+.bottom-left[
+* to read more about the `apply` family https://tinyurl.com/rse8ape
+]
+
+---
 # Anonymous functions
 
 Sometimes, you won't save the function like seen below, but rather - use it directly in a code:
@@ -142,7 +160,6 @@ In R functions are objects in their own right. They aren’t automatically bound
 matrix_of_numbers <- matrix(1:100,5,10)
 apply(matrix_of_numbers,2,function(x) x^2)
 ```
-
 ---
 class: exercise
 
@@ -248,7 +265,7 @@ class: inverse, center, middle
 ---
 
 .center[
-# First: What is pipes in R
+# First: What are pipes in R
 ]
 .pull-left[
 ![](img/logo.png)
@@ -273,6 +290,7 @@ iris %>%
   head() %>% 
   knitr::kable()
 ```
+
 
 ---
 .center[

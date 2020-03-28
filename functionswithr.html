@@ -162,8 +162,26 @@ apply(matrix_of_numbers,2,function(x) x^2)
 ## [4,]   16   81  196  361  576  841 1156 1521 1936  2401
 ## [5,]   25  100  225  400  625  900 1225 1600 2025  2500
 ```
+---
+
+# `apply` family functions
+
+A family of functions to manipulate data in a repetitive way. 
+These functions allow crossing the data in a number of ways and avoid explicit use of loop constructs.
+
+The most used `apply` functions are `apply()` (that we saw before) and `lapply` that work on lists
 
 ---
+
+# `apply()`
+
+![](img/content_content_apply_1.png)
+
+.bottom-left[
+* to read more about the apply family https://tinyurl.com/rse8ape
+]
+---
+
 class: exercise
 
 # Practice time!
@@ -272,7 +290,7 @@ col_means(data)
 ```
 
 ```
-## [1] 0.09561068 0.34976111
+## [1] 0.001625269 0.099581445
 ```
 
 ---
@@ -293,7 +311,7 @@ class: inverse, center, middle
 ---
 
 .center[
-# First: What is pipes in R
+# First: What are pipes in R
 ]
 .pull-left[
 ![](img/logo.png)
@@ -323,6 +341,7 @@ iris %&gt;%
           4.6           3.1            1.5           0.2  setosa  
           5.0           3.6            1.4           0.2  setosa  
           5.4           3.9            1.7           0.4  setosa  
+
 
 ---
 .center[
