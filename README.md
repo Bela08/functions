@@ -1,5 +1,4 @@
-# functions
-## EcoDataSci-TLV 2018-12-18
+# Functions
 
 Slides: https://globedatasci-ku.github.io/functions/functionswithr.html  
 Iteration tutorial (intro to `purrr::map`): https://globedatasci-ku.github.io/functions/iteration_map.html  
