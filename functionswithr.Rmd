@@ -165,7 +165,7 @@ class: exercise
 
 # Practice time!
 
-multiply all the numbers in each row by a different numberin the following dataframe (use apply)
+multiply all the numbers in each row by a different number in the following dataframe (use apply)
 
 ```{r}
 df<- as.data.frame(matrix(1:100,5,10))

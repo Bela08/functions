@@ -4,7 +4,7 @@
     <title>functions with R</title>
     <meta charset="utf-8" />
     <meta name="author" content="adapted from: Hezi Buba &amp; Irene Steves" />
-    <meta name="date" content="2020-03-28" />
+    <meta name="date" content="2020-03-30" />
     <link href="libs/remark-css/default.css" rel="stylesheet" />
     <link rel="stylesheet" href="custom-fonts.css" type="text/css" />
   </head>
@@ -15,7 +15,7 @@ class: center, middle, inverse, title-slide
 # functions with R
 ## Maria Novosolov
 ### adapted from: Hezi Buba &amp; Irene Steves
-### 2020-03-28
+### 2020-03-30
 
 ---
 
@@ -143,6 +143,24 @@ For example, if you give the function 10 it returns 100
 
 ---
 
+# `apply` family functions
+
+A family of functions to manipulate data in a repetitive way. 
+These functions allow crossing the data in a number of ways and avoid explicit use of loop constructs.
+
+The most used `apply` functions are `apply()` (that we saw before) and `lapply` that work on lists
+
+---
+
+# `apply()`
+
+![](img/content_content_apply_1.png)
+
+.bottom-left[
+* to read more about the `apply` family https://tinyurl.com/rse8ape
+]
+
+---
 # Anonymous functions
 
 Sometimes, you won't save the function like seen below, but rather - use it directly in a code:
@@ -163,30 +181,11 @@ apply(matrix_of_numbers,2,function(x) x^2)
 ## [5,]   25  100  225  400  625  900 1225 1600 2025  2500
 ```
 ---
-
-# `apply` family functions
-
-A family of functions to manipulate data in a repetitive way. 
-These functions allow crossing the data in a number of ways and avoid explicit use of loop constructs.
-
-The most used `apply` functions are `apply()` (that we saw before) and `lapply` that work on lists
-
----
-
-# `apply()`
-
-![](img/content_content_apply_1.png)
-
-.bottom-left[
-* to read more about the apply family https://tinyurl.com/rse8ape
-]
----
-
 class: exercise
 
 # Practice time!
 
-multiply all the numbers in each row by a different numberin the following dataframe (use apply)
+multiply all the numbers in each row by a different number in the following dataframe (use apply)
 
 
 ```r
@@ -290,7 +289,7 @@ col_means(data)
 ```
 
 ```
-## [1] 0.001625269 0.099581445
+## [1]  0.08644083 -0.05824410
 ```
 
 ---
