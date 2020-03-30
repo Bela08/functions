@@ -1,0 +1,59 @@
+---
+title: "functions with R practic solutions"
+subtitle: "Maria Novosolov"
+author: "adapted from: Hezi Buba & Irene Steves"
+date: "`r Sys.Date()`"
+output:
+  xaringan::moon_reader:
+    lib_dir: libs
+    css: ["default", "custom-fonts.css"]
+    chakra: "libs/remark-latest.min.js"
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      ratio: '16:9'
+---
+
+```{r setup, include=FALSE}
+options(htmltools.dir.version = FALSE)
+library(tidyverse)
+```
+
+---
+# Solution practic 1
+
+```{r}
+square<- function(x){
+  return(x*x)
+}
+
+square(4)
+```
+
+---
+
+# Solution practic 2
+
+```{r}
+df<- as.data.frame(matrix(1:100,5,10))
+df
+a<- c(2,3,4,5,6)
+apply(df,2,function(x) x*a)
+```
+
+---
+# Solution practic 3
+
+```{r}
+bottles99<- function(){
+  i = 99
+  while(i > 0){
+    print(paste(i,"bottles of beer on the wall",i, "bottles of beer. Take one down, pass it around -",i-1,"bottles of beer on the wall"))
+    i = i -1
+  }
+
+}
+
+bottles99()
+```
+
