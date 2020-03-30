@@ -1,7 +1,6 @@
 ---
 title: "functions with R practic solutions"
 subtitle: "Maria Novosolov"
-author: "adapted from: Hezi Buba & Irene Steves"
 date: "`r Sys.Date()`"
 output:
   xaringan::moon_reader:
